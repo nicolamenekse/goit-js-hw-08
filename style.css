@@ -1,0 +1,23 @@
+body{
+    background-color: antiquewhite;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.gallery-item {
+  /* border: 5px solid green; */
+}
+
+.gallery-link {
+  /* border: 5px solid yellow; */
+}
+
+.gallery-image {
+  /* border: 5px solid black; */
+  width: 500px;
+  height: 300px;
+}
