@@ -90,29 +90,24 @@ images.forEach(item => {
 })
 
 gallery.addEventListener("click", (event) => {
-    // console.log(event.target.dataset.source)
+    if(event.target.nodeName !== "IMG"){
+        return
+    }
     const source = event.target.dataset.source
 
-    const instance = basicLightbox.create(`<img width="1400" height="900" src="${source}">`)
+    const instance = basicLightbox.create(`<img  width="1112" height="640" src="${source}">`)
     instance.show()
 
-    // document.addEventListener("keydown", (event) => {
-    // console.log(event.code)
-    // })
+
+
     const closeLightBox = (e) => {
         if (e.code === "Escape") {
             instance.close()
-            document.removeEventListener("keydown", closeLightBox)
-        }
+            document.removeEventListener("keydown",closeLightBox)
+        }   
     }
 
     document.addEventListener("keydown", closeLightBox)
 
 })
-
-
-
-
-
-
 

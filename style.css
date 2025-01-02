@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: antiquewhite;
 }
 .gallery {
@@ -8,16 +8,32 @@ body{
   list-style-type: none;
 }
 
-.gallery-item {
-  /* border: 5px solid green; */
-}
-
-.gallery-link {
-  /* border: 5px solid yellow; */
-}
-
 .gallery-image {
-  /* border: 5px solid black; */
-  width: 500px;
-  height: 300px;
+  width: 360px;
+  height: 200px;
+} */
+
+.gallery-item {
+  margin-left: 156px;
+  margin-top: 24px;
 }
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+
+.gallery-image:hover {
+  transform: scale(1.02);
+}
+
+.gallery {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.basicLightbox--visible .basicLightbox__placeholder {
+  background-color: rgba(46, 47, 66, 0.8);
+}
+
+
